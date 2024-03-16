@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondbg"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/nomVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/nom"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/specVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomVal"
+        android:text="@string/sp_cialit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/specVal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/phoneVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specVal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="83dp"
+        android:layout_toEndOf="@+id/phoneIcon"
+        android:text="@string/num"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mapIcon"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:src="@drawable/map"
+        android:layout_below="@id/phoneIcon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+         />
+
+    <TextView
+        android:id="@+id/longVal"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneVal"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@id/mapIcon"
+        android:text="@string/longitude"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/latVal"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneVal"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@id/longVal"
+        android:text="@string/latitude"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/webIcon"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:src="@drawable/link"
+        android:layout_below="@id/mapIcon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/webVal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longVal"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/webIcon"
+        android:text="@string/sm"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="193dp"
+        android:layout_alignBottom="@+id/specVal"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="-48dp"
+        app:srcCompat="@drawable/picprofile"
+        android:contentDescription="@string/app_name"/>
+
+
+</RelativeLayout>

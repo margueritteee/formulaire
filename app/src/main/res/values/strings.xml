@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">formulaire</string>
+    <string name="nom">nom et prenom</string>
+    <string name="sm">site web ou page facebook</string>
+    <string name="enregistrer">enregistrer</string>
+    <string name="latitude">latitude</string>
+    <string name="sp_cialit">spécialité</string>
+    <string name="longitude">longitude</string>
+    <string name="num">numero</string>
+
+</resources>
